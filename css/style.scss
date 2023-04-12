@@ -113,6 +113,17 @@ table {
     box-shadow:  rgba(0, 0, 0, 0.3);
     height: 60rem;
     width: 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
 
     .wrap-home-page-container {
         max-width: 128rem;
@@ -124,7 +135,7 @@ table {
             border-radius: 16px;
             padding: 2rem;
             margin: 2rem;
-            top: 18rem;
+            top: 3rem;
 
             h2 {
                 font-size: 28.1px;
@@ -442,7 +453,7 @@ table {
         .wrap-home-page-container {
             .overlay-box {
                 max-width: 580px;
-                top: 25rem;
+                top: 10rem;
                 padding: 3rem 2rem;
     
                 p {
@@ -579,18 +590,6 @@ table {
         }
     }
     
-}
-
-@include mixins.break(exwide) {
-    /* Banner Section (exwide)*/
-    .hero-banner {
-        .overlay-box {
-            max-width: 580px;
-            top: 22rem;
-            padding: 3rem 2rem;
-            margin: 0;
-        }
-    }
 }
 
 /*--------------------------------------------------------------

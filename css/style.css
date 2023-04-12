@@ -562,6 +562,16 @@ table {
   box-shadow: rgba(0, 0, 0, 0.3);
   height: 60rem;
   width: 100%;
+  position: relative;
+}
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .hero-banner .wrap-home-page-container {
   max-width: 128rem;
@@ -573,7 +583,7 @@ table {
   border-radius: 16px;
   padding: 2rem;
   margin: 2rem;
-  top: 18rem;
+  top: 3rem;
   /* brush for heading 1*/
 }
 .hero-banner .wrap-home-page-container .overlay-box h2 {
@@ -843,7 +853,7 @@ table {
   /* Banner - Section (small)*/
   .hero-banner .wrap-home-page-container .overlay-box {
     max-width: 580px;
-    top: 25rem;
+    top: 10rem;
     padding: 3rem 2rem;
   }
   .hero-banner .wrap-home-page-container .overlay-box p {
@@ -943,15 +953,6 @@ table {
   /* More About Us section (Wide)*/
   .more-about-us .wrap-more-about-us .more-about-images a {
     font-size: 28.13px;
-  }
-}
-@media (min-width: 1750px) {
-  /* Banner Section (exwide)*/
-  .hero-banner .overlay-box {
-    max-width: 580px;
-    top: 22rem;
-    padding: 3rem 2rem;
-    margin: 0;
   }
 }
 /*--------------------------------------------------------------
