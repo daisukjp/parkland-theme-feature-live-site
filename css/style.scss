@@ -1615,34 +1615,59 @@ button#wpforms-submit-343{
 /*--------------------------------------------------------------
 # Photo gallery page
 --------------------------------------------------------------*/
+
+main {
 .photo-gallery-banner{
     background: url("../images/ptc-photo-gallery-banner.webp") center no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-    height: 60vh;
+    height: 18vh;
     width: 100%; 
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
-.photo-gallery-rectangle {
-    position: relative;
-    text-align: center;
-    width: clamp(5rem, 30vw, 27rem);
-    height: 0px;
-    bottom: 30px;
-    border: 10px solid $matcha-green;
-    margin: auto;
-    z-index: 0;
-}
+    /* Small Size View */
+    @include mixins.break(small) {
+        .photo-gallery-banner {
+            height: 25vh;
+        }
+    }
 
+    /* Medium Size View */
+    @include mixins.break(med) {
+        
+        .photo-gallery-banner {
+            height: 35vh;
+        }
+
+    }
+
+    @include mixins.break(wide) {
+        .photo-gallery-banner {
+            height: 45vh;
+        }
+    }
+}
 
 .photo-gallery-banner h2 {
     position: relative;
     margin: auto;
-    padding-top: 15rem;
     color: $gray-99;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: 1;
     z-index: 1;
+}
+
+.photo-gallery-banner img {
+    position: absolute;
+    top: 1.5rem;
+    margin: auto;
+    width: 100%;
+    max-height: 20px;
+    z-index: -1;
 }
 
 .photo-gallery-section {
@@ -1673,21 +1698,16 @@ img {
 }
 
 .gallery-container {
+    max-width: 128rem;
     height: auto;
+    margin: 0 auto;
 }
 
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
-//    width: 358px;
-//    height: 358px;
-    //grid-template-columns: 358px 358px 358px;
-    //grid-template-rows: 358px 358px 358px;
-    //grid-auto-rows: 100px;
     gap: 1.5em;
-//    justify-items: center;
     justify-content: center;
-//    margin-bottom: 1.5em;
     height: auto;
 }
 
@@ -1699,9 +1719,6 @@ img {
 .image-gallery li img {
     object-fit: cover;
     max-width: 358px;
-//    display: flex;
-//    width: 358px;
-//    height: 358px;
     height: 358px;
     vertical-align: middle;
 }
