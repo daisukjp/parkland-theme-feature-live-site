@@ -12,28 +12,28 @@
 
 <?php get_header(); ?>
 
-<div class="about-us-container">
-
+<div class="about-us-top-banner">
 <div class="about-us-banner-image" >
     <h2 class="top-of-page-banner-text" >ABOUT <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h2>
 </div>
+</div>
 
 
+<div class="about-us-container">
 <div class="ptc-video">
     <video width="1280" height="auto" controls loop autoplay muted>
-      <source src="/wp-content/themes/parkland-theme/images/ptc-video.mp4" type="video/mp4">
+        <source src="/wp-content/themes/parkland-theme/images/ptc-video.mp4" type="video/mp4">
     </video>
- 
+
 </div>
 
 <div class="about-us-section"  id="about-us">
-   
-    <h1>Brief history of Parkland Tai Chi<img src="/wp-content/themes/parkland-theme/images/brushstroke.png" alt="styled brush stroke"></h1>
+    <h1>Brief history of Parkland Tai Chi<img src="/wp-content/themes/parkland-theme/images/brush-vector-1.svg" alt="styled brush stroke"></h1>
 
     <div class="about-us-section-intro">
 
         <div class="about-us-section-image">
-               <image><img src="/wp-content/themes/parkland-theme/images/ptc-about-us-section-image.jpg" alt="photo of tai chi class"></image>
+            <image><img src="/wp-content/themes/parkland-theme/images/ptc-about-us-section-image.jpg" alt="photo of tai chi class"></image>
         </div>
 
         <div class="about-us-section-written-content">
