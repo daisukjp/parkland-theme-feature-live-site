@@ -214,6 +214,7 @@ header svg {
   }
   .main-navigation.toggled ul#primary-menu {
     border-bottom: 1px solid black;
+    padding-bottom: 8rem;
   }
   .search {
     display: none;
