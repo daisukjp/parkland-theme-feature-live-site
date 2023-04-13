@@ -863,7 +863,7 @@ main {
     }
 }
 
-.instructors-banner h2 {
+.instructors-banner h1 {
     position: relative;
     margin: auto;
     color: $gray-99;
@@ -875,10 +875,14 @@ main {
 
 .instructors-banner img {
     position: absolute;
-    top: 1.5rem;
+    top: 0.8rem;
     width: 100%;
     max-height: 20px;
     z-index: -1;
+
+    @include mixins.break(med) {
+        top: 1.2rem;
+    }
 }
 
 .instructor-container-1,

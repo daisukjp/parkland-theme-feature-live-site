@@ -20,16 +20,20 @@
     <div class="instructors-page-container">
 
         <div class="instructors-banner">
-            <h2>Instructors<img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h2>
+            <h1>
+                Instructors
+                <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke">
+            </h1>
         </div>
 
     </div>
 
     <div class="instructors-section">
 
-        <h2>Meet Our Instructors <img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
-
-
+        <h2>
+            Meet Our Instructors 
+            <img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke">
+        </h2>
 
         <?php
             $args = array(
@@ -53,7 +57,7 @@
                                 <?php
                                 get_field('instructor_content');
                                 ?>
-                                               <?php if( get_field('instructor_image') ): ?>
+                                    <?php if( get_field('instructor_image') ): ?>
                     <img src="<?php the_field('instructor_image'); ?>" width="580" height="380"  />
                 <?php endif; ?>
                             </div>
