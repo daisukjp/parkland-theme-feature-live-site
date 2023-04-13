@@ -166,7 +166,6 @@ a {
   border-bottom: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   padding: 1rem;
-  margin-bottom: 2rem;
 }
 
 .sub-menu {
@@ -206,6 +205,7 @@ header svg {
   }
   .main-navigation.toggled {
     position: relative;
+    z-index: 10;
   }
   .main-navigation.toggled .search {
     position: absolute;
@@ -214,6 +214,7 @@ header svg {
   }
   .main-navigation.toggled ul#primary-menu {
     border-bottom: 1px solid black;
+    padding-bottom: 8rem;
   }
   .search {
     display: none;
@@ -591,7 +592,7 @@ table {
   font-weight: 600;
   margin: 18px 0;
   position: relative;
-  z-index: 10;
+  z-index: 9;
 }
 .hero-banner .wrap-home-page-container .overlay-box p {
   text-align: center;
