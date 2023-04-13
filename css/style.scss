@@ -624,7 +624,7 @@ table {
         height: 60rem;
     }
 
-    h2 {
+    h1 {
         color: white;
         font-weight: 700;
         position: relative;
@@ -639,10 +639,10 @@ table {
     }
 }
 
-.about-us-container h2 {
-    text-align: left;
-    line-height: 1;
-}
+// .about-us-container h2 {
+//     text-align: left;
+//     line-height: 1;
+// }
 
 .about-us-container,
 .registration-heading {
@@ -677,7 +677,7 @@ table {
     }
 }
 
-.about-us-section h1 {
+.about-us-section h2 {
     position: relative;
 
     @media (max-width: 800px) {
@@ -750,7 +750,7 @@ table {
 }
 
 .faq-container {
-    h1 {
+    h2 {
         margin-top: 2rem;
         color: $matcha-green;
     }

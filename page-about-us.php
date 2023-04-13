@@ -14,7 +14,7 @@
 
 <div class="about-us-top-banner">
 <div class="about-us-banner-image" >
-    <h2 class="top-of-page-banner-text" >ABOUT <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h2>
+    <h1 class="top-of-page-banner-text" >ABOUT <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h1>
 </div>
 </div>
 
@@ -28,7 +28,7 @@
 </div>
 
 <div class="about-us-section"  id="about-us">
-    <h1>Brief history of Parkland Tai Chi<img src="/wp-content/themes/parkland-theme/images/brush-vector-1.svg" alt="styled brush stroke"></h1>
+    <h2>Brief history of Parkland Tai Chi<img src="/wp-content/themes/parkland-theme/images/brush-vector-1.svg" alt="styled brush stroke"></h2>
 
     <div class="about-us-section-intro">
 
@@ -75,7 +75,7 @@
 </div>
 
 <div class="faq-container" id="faq" >
-    <h1>FAQ</h1>
+    <h2>FAQ</h2>
     <div class="about-us-faq"  >
             <div class="faq-item">
                 <h4>I'm in my mid 60's, is it too late to reap the benefits from Tai Chi?</h4>

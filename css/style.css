@@ -98,21 +98,21 @@ html {
   font-size: 62.5%;
 }
 
-h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  font-size: clamp(2.8rem, 4vw, 4.4rem);
-  text-align: center;
-}
-
-h2, h3, h4 {
+h1, h3, h4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   text-align: center;
 }
 
-h2 {
+h1 {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
+  text-align: center;
 }
 
 h3 {
@@ -137,7 +137,7 @@ a {
   color: black;
 }
 
-.about-us-section h1 {
+.about-us-section h2 {
   color: #74865E;
   text-transform: uppercase;
   line-height: 1;
@@ -989,7 +989,7 @@ table {
     height: 60rem;
   }
 }
-.about-us-banner-image h2 {
+.about-us-banner-image h1 {
   color: white;
   font-weight: 700;
   position: relative;
@@ -1000,11 +1000,6 @@ table {
   top: 1.5rem;
   width: 100%;
   z-index: -1;
-}
-
-.about-us-container h2 {
-  text-align: left;
-  line-height: 1;
 }
 
 .about-us-container,
@@ -1038,15 +1033,15 @@ table {
   max-width: 56ch;
 }
 
-.about-us-section h1 {
+.about-us-section h2 {
   position: relative;
 }
 @media (max-width: 800px) {
-  .about-us-section h1 {
+  .about-us-section h2 {
     text-align: center;
   }
 }
-.about-us-section h1 img {
+.about-us-section h2 img {
   position: absolute;
   height: 4rem;
   top: 1rem;
@@ -1055,7 +1050,7 @@ table {
   width: 100%;
 }
 @media (max-width: 800px) {
-  .about-us-section h1 img {
+  .about-us-section h2 img {
     top: 0.5rem;
   }
 }
@@ -1108,7 +1103,7 @@ table {
   text-align: left;
 }
 
-.faq-container h1 {
+.faq-container h2 {
   margin-top: 2rem;
   color: #74865E;
 }
