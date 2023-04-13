@@ -1557,8 +1557,7 @@ main .blog-post-banner {
   justify-content: center;
   align-items: center;
 }
-main .blog-post-banner h2 {
-  font-size: 28.13px;
+main .blog-post-banner h1 {
   text-align: center;
   color: #FCFCFC;
   text-transform: uppercase;
@@ -1578,34 +1577,39 @@ main .blog-post-banner .blog-list-header-title img {
 main section {
   padding: 72px 20px 0 20px;
 }
-main section h2 {
-  font-size: 28.13px;
-  color: #74865E;
-  text-transform: uppercase;
-  margin-bottom: 72px;
-}
 main section .blog-post-top-box {
   position: relative;
 }
-main section .blog-post-top-box .vector-1 {
-  background: url("../images/brush-vector-1.svg") no-repeat;
-  background-size: 100% 37px;
-  height: 50px;
-  width: 100%;
-  position: absolute;
-  top: 10px;
-  z-index: -1;
-  max-width: 380px;
+main section .blog-post-top-box h2 {
+  color: #74865E;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+  color: #74865E;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 18px;
+  position: relative;
 }
-@media (min-width: 800px) {
-  main section .blog-post-top-box .vector-1 {
-    top: 45px;
-    background-size: 100% 40px;
+main section .blog-post-top-box h2 img {
+  position: absolute;
+  top: 1.4rem;
+  z-index: -1;
+  width: 100%;
+  max-width: 365px;
+}
+@media (min-width: 789px) {
+  main section .blog-post-top-box h2 img {
+    max-width: 400px;
   }
 }
-@media (min-width: 845px) {
-  main section .blog-post-top-box .vector-1 {
-    max-width: 834.48px;
+@media (min-width: 880px) {
+  main section .blog-post-top-box h2 img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 920px) {
+  main section .blog-post-top-box h2 img {
+    max-width: 550px;
   }
 }
 main section .blog-post-top-box .blog-post-top-box-item {
@@ -1615,7 +1619,7 @@ main section .blog-post-top-box .blog-post-top-box-item {
 @media (min-width: 845px) {
   main section .blog-post-top-box .blog-post-top-box-item {
     margin: auto;
-    max-width: 840px;
+    max-width: 470px;
   }
 }
 main .blog-flex-item {
@@ -1680,10 +1684,6 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
 @media (min-width: 800px) {
   main section {
     padding: 72px 50px;
-  }
-  main section h2 {
-    font-size: 64px;
-    font-weight: 600;
   }
   main .blog-flex-item {
     grid-gap: 72px;

@@ -169,11 +169,6 @@ table {
                     z-index: 5;
                     left: 86px;
                 }
-
-                // @media (min-width: 845px) {
-                //     top: 27px;
-                //     max-width: 834.48px;
-                // }
             }
 
             .banner-btn-flex {
@@ -1229,8 +1224,7 @@ main {
         justify-content: center;
         align-items: center;
 
-        h2 {
-            font-size: 28.13px;
+        h1 {
             text-align: center;
             color: $gray-99;
             text-transform: uppercase;
@@ -1252,32 +1246,36 @@ main {
 
     section {
         padding: 72px 20px 0 20px;
-        h2 {
-            font-size: 28.13px;
-            color: $matcha-green;
-            text-transform: uppercase;
-            margin-bottom: 72px;
-        }
 
         .blog-post-top-box {
             position: relative;
-            .vector-1 {
-                background: url("../images/brush-vector-1.svg") no-repeat;
-                background-size: 100% 37px;
-                height: 50px;
-                width: 100%;
-                position: absolute;
-                top: 10px;
-                z-index: -1;
-                max-width: 380px;
-        
-                @include mixins.break(med) { 
-                    top: 45px;      
-                    background-size: 100% 40px;
-                }
-        
-                @media (min-width: 845px) {
-                    max-width: 834.48px;
+            h2 {
+                color: $matcha-green;
+                text-transform: uppercase;
+                margin-bottom: 72px;
+                color: $matcha-green;
+                text-transform: uppercase;
+                line-height: 1;
+                margin-bottom: 18px;
+                position: relative;
+                img {
+                    position: absolute;
+                    top: 1.4rem;
+                    z-index: -1;
+                    width: 100%;
+                    max-width: 365px;
+                    @media (min-width:789px) {
+                        max-width: 400px;
+                    }
+                    // @media (min-width:840px) {
+                    //     max-width: 450px;
+                    // }
+                    @media (min-width:880px) {
+                        max-width: 500px;
+                    }
+                    @media (min-width:920px) {
+                        max-width: 550px;
+                    }
                 }
             }
             
@@ -1287,7 +1285,7 @@ main {
 
                 @media (min-width: 845px) {
                     margin: auto;
-                    max-width: 840px;
+                    max-width: 470px;
                 }
             }
         }
@@ -1372,11 +1370,6 @@ main {
         
         section {
             padding: 72px 50px;
-
-            h2 {
-                font-size: 64px;
-                font-weight: 600;
-            }
         }
 
         .blog-flex-item {
