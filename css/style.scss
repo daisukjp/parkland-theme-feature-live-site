@@ -907,12 +907,12 @@ main {
     }
 img {
     position: absolute;
-    top: 1.5rem;
+    top: 6rem;
     left: -1rem;
     z-index: -1;
     width: 100%;
-    @media (max-width:800px) {
-        top: .5rem;
+    @media (min-width:404px) {
+        top: 1.9rem;
     }
 }
 }

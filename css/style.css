@@ -1250,14 +1250,14 @@ main .instructors-banner {
 }
 .instructors-section h2 img {
   position: absolute;
-  top: 1.5rem;
+  top: 6rem;
   left: -1rem;
   z-index: -1;
   width: 100%;
 }
-@media (max-width: 800px) {
+@media (min-width: 404px) {
   .instructors-section h2 img {
-    top: 0.5rem;
+    top: 1.9rem;
   }
 }
 
