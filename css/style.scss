@@ -137,8 +137,7 @@ table {
             margin: 2rem;
             top: 3rem;
 
-            h2 {
-                font-size: 28.1px;
+            h1 {
                 font-weight: 600;
                 margin: 18px 0;
                 position: relative;
@@ -242,42 +241,40 @@ table {
         margin: 72px 2rem;
     }
 
-    h1 {
-        font-size: 35.16px;
+    h2 {
         color: $matcha-green;
         text-transform: uppercase;
         line-height: 1;
         margin-bottom: 18px;
         position: relative;
+        @media (min-width: 400px) {
+            text-align: left;
+        }
+        img {
+            position: absolute;
+            top: 1.4rem;
+            z-index: -1;
+            width: 100%;
+            max-width: 365px;
+            @media (min-width:789px) {
+                max-width: 400px;
+            }
+            @media (min-width:840px) {
+                max-width: 450px;
+            }
+            @media (min-width:880px) {
+                max-width: 500px;
+            }
+            @media (min-width:920px) {
+                max-width: 550px;
+            }
+        }
     }
 
     .mission-statement-title {
         position: relative;
     }
 
-    .mission-statement .vector-1 {
-        background: url("../images/brush-vector-1.svg") no-repeat;
-        background-size: 100% 37px;
-        height: 50px;
-        width: 100%;
-        position: absolute;
-        top: 43px;
-        z-index: -1;
-        @media (min-width: 450px) {
-            top: 9px;
-        }
-
-        @include mixins.break(small) { 
-            top: 95px;      
-            background-size: 100% 40px;
-        }
-
-        @media (min-width: 845px) {
-            top: 27px;
-            max-width: 834.48px;
-        }
-
-    }
 
     .mission-statement p {
         font-family: 'Josefin Sans', sans-serif;
@@ -334,8 +331,6 @@ table {
     padding: 72px 20px 0 20px;
 
     h2 {
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 22.5px;
         font-weight: 600;
         color: $matcha-green;
         text-transform: uppercase;
@@ -905,16 +900,16 @@ main {
     @media (max-width: 800px) {
         text-align: center;
     }
-img {
-    position: absolute;
-    top: 6rem;
-    left: -1rem;
-    z-index: -1;
-    width: 100%;
-    @media (min-width:404px) {
-        top: 1.9rem;
+    img {
+        position: absolute;
+        top: 6rem;
+        left: -1rem;
+        z-index: -1;
+        width: 100%;
+        @media (min-width:404px) {
+            top: 1.9rem;
+        }
     }
-}
 }
 
 .instructor-image{

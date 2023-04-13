@@ -587,8 +587,7 @@ table {
   top: 3rem;
   /* brush for heading 1*/
 }
-.hero-banner .wrap-home-page-container .overlay-box h2 {
-  font-size: 28.1px;
+.hero-banner .wrap-home-page-container .overlay-box h1 {
   font-weight: 600;
   margin: 18px 0;
   position: relative;
@@ -671,42 +670,47 @@ table {
 .mission-statement-section .wrap-mission-statement {
   margin: 72px 2rem;
 }
-.mission-statement-section h1 {
-  font-size: 35.16px;
+.mission-statement-section h2 {
   color: #74865E;
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 18px;
   position: relative;
 }
+@media (min-width: 400px) {
+  .mission-statement-section h2 {
+    text-align: left;
+  }
+}
+.mission-statement-section h2 img {
+  position: absolute;
+  top: 1.4rem;
+  z-index: -1;
+  width: 100%;
+  max-width: 365px;
+}
+@media (min-width: 789px) {
+  .mission-statement-section h2 img {
+    max-width: 400px;
+  }
+}
+@media (min-width: 840px) {
+  .mission-statement-section h2 img {
+    max-width: 450px;
+  }
+}
+@media (min-width: 880px) {
+  .mission-statement-section h2 img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 920px) {
+  .mission-statement-section h2 img {
+    max-width: 550px;
+  }
+}
 .mission-statement-section .mission-statement-title {
   position: relative;
-}
-.mission-statement-section .mission-statement .vector-1 {
-  background: url("../images/brush-vector-1.svg") no-repeat;
-  background-size: 100% 37px;
-  height: 50px;
-  width: 100%;
-  position: absolute;
-  top: 43px;
-  z-index: -1;
-}
-@media (min-width: 450px) {
-  .mission-statement-section .mission-statement .vector-1 {
-    top: 9px;
-  }
-}
-@media (min-width: 600px) {
-  .mission-statement-section .mission-statement .vector-1 {
-    top: 95px;
-    background-size: 100% 40px;
-  }
-}
-@media (min-width: 845px) {
-  .mission-statement-section .mission-statement .vector-1 {
-    top: 27px;
-    max-width: 834.48px;
-  }
 }
 .mission-statement-section .mission-statement p {
   font-family: "Josefin Sans", sans-serif;
@@ -755,8 +759,6 @@ table {
   padding: 72px 20px 0 20px;
 }
 .more-about-us h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 22.5px;
   font-weight: 600;
   color: #74865E;
   text-transform: uppercase;
