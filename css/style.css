@@ -2063,6 +2063,10 @@ main .photo-gallery-banner {
     font-size: 4.395rem;
   }
 }
+body .featherlight .featherlight-close-icon {
+  background-image: url("../images/times.svg");
+}
+
 /*--------------------------------------------------------------
 # Search results page
 --------------------------------------------------------------*/
