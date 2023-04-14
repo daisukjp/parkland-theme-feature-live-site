@@ -1041,6 +1041,7 @@ table {
 @media (max-width: 800px) {
   .about-us-section h2 {
     text-align: center;
+    width: 100%;
   }
 }
 .about-us-section h2 img {
