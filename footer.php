@@ -22,10 +22,12 @@
               <div class="flex-align">
                 <h3>Sitemap</h3>
                 <ul>
-                <li><a href="#">Classes</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="https://www.parklandtaichi.com/classes/">Classes</a></li>
+                <li><a href="https://www.parklandtaichi.com/registration/">Registration</a></li>
+                <li><a href="https://www.parklandtaichi.com/about-us/">About</a></li>
+                <li><a href="https://www.parklandtaichi.com/blogs/">Blogs</a></li>
+                <li><a href="https://www.parklandtaichi.com/moveset/">Moveset</a></li>
+                <li><a href="https://www.parklandtaichi.com/photo-gallery/">Gallery</a></li>
                 <li><a href="https://www.iubenda.com/privacy-policy/28932283" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
 
                 </ul>

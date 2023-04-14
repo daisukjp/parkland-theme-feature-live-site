@@ -93,7 +93,7 @@
             event.preventDefault();
             for (const link of menuItem.parentNode.children) {
                 if (menuItem !== link) {
-                    link.classList.remove("focus");
+                    link.classList.toggle("focus");
                 }
             }
             menuItem.classList.toggle("focus");

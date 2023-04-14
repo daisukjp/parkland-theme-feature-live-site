@@ -82,6 +82,8 @@ function parkland_theme_setup() {
 		)
 	);
 
+	
+
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -212,6 +214,13 @@ function acf_add_allowed_svg_tag( $tags, $context ) {
     return $tags;
 
 }
+
+function wmpudev_enqueue_icon_stylesheet() {
+	wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'fontawesome');
+}
+add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
+
 
 add_image_size('blog-single-size', 650, 800, array('left', 'top') );
 
