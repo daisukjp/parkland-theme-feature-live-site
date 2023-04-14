@@ -26,6 +26,8 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Gallery</a></li>
+                <li><a href="https://www.iubenda.com/privacy-policy/28932283" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
+
                 </ul>
               </div>
             </div>
@@ -114,11 +116,12 @@
               </svg>
               
               
-                        <div class="contact">
-              <h4><a href="mailto:parklandtaichi@email.com"> parklandtaichi@email.com </a></h4>
-              <p>(780) 123-4567</p>
-              <p>123 Fake Street</p>
-                        </div>
+            <div class="contact">
+              <h4><a href="mailto:staff.parklandtaichi@gmail.com"> contact@parklandtaichi.com </a></h4>
+              <p><a href="tel:780-982-3033">(780) 982-3033</a></p>
+              <p>#205, 95 McLeod Ave</p>
+              <p>Spruce Grove, AB T7X 2Z6</p>
+          </div>
             </div>
 
 
@@ -130,15 +133,19 @@
               <div class="social-media-links">
                   <ul>
                     <li class="linked-in"><a  target="_blank" href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                    <li class="instagram"><a target="_blank" href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                    <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li class="instagram"><a target="_blank" href="https://www.instagram.com/parklandtaichiassociation/"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/earlierheaventaichi"><i class="fa fa-facebook fa-2x"></i></a></li>
                   </ul>
                 </div>
            </div>
 
 </div>
+<div class="developed-by">
+  <p>Designed and Developed by: <a href=" https://linktr.ee/cde_group?utm_source=linktree_admin_share" target="_blank" title="CDE">CDE</a> ● 2023</p>
+</div>
 
 </footer>
+
 </div> <!-- #page -->
 
 <?php wp_footer(); ?>
