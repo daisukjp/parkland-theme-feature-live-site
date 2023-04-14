@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap");
 .header h1 {
   color: red;
 }
@@ -151,6 +151,7 @@ a {
   color: #74865E;
   text-transform: uppercase;
   line-height: 1;
+  margin-top: 5rem;
   margin-bottom: 18px;
   width: 15ch;
 }
@@ -159,6 +160,10 @@ a {
   font-family: "Josefin Sans";
   font-weight: 300;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+footer a, footer p {
+  font-weight: 700;
 }
 
 .site-header {
@@ -203,6 +208,20 @@ header svg {
     height: 8rem;
     background: #74865E;
   }
+  .fa::before {
+    margin-right: 0.5rem;
+    color: black;
+    margin-top: 2.5rem;
+  }
+  li#menu-item-55 {
+    white-space: nowrap;
+  }
+  li#menu-item-23 {
+    flex-basis: 15rem;
+    white-space: nowrap;
+    width: 100%;
+    margin-right: 2rem;
+  }
   .main-navigation.toggled {
     position: relative;
     z-index: 10;
@@ -210,7 +229,7 @@ header svg {
   .main-navigation.toggled .search-input-form {
     position: absolute;
     display: block;
-    top: 35.6rem;
+    top: 36.2rem;
   }
   .main-navigation.toggled ul#primary-menu {
     border-bottom: 1px solid black;
@@ -237,6 +256,12 @@ header svg {
   .weather-widget {
     margin: 0 auto;
   }
+  .menu-item-23 {
+    margin-top: 1rem;
+  }
+  .sub-menu li {
+    margin-top: 1rem;
+  }
 }
 .top-of-page-banner-text.clicked {
   z-index: -1;
@@ -261,13 +286,37 @@ header svg {
 .navigation-menu {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .menu-toggle svg {
   height: 3.5rem;
 }
 
+.fa::before {
+  float: right;
+  margin-right: 0.5rem;
+  color: black;
+}
+
+li#menu-item-55 {
+  white-space: nowrap;
+}
+
+li#menu-item-23 {
+  flex-basis: 15rem;
+  white-space: nowrap;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+@media (min-width: 800px) {
+  .fa::before {
+    float: left;
+    margin-right: 0.5rem;
+    color: black;
+  }
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -315,7 +364,8 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -422,7 +472,8 @@ footer {
   display: flex;
   gap: 3rem;
   align-items: center;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .site-navigation {
@@ -1421,6 +1472,7 @@ main .instructors-banner {
 .taichi-quote-container {
   background: #74865E;
   padding: 3rem;
+  margin-top: 5rem;
   box-shadow: rgba(60, 64, 67, 0.2) 0px 1px 2px 0px, rgba(60, 64, 67, 0.1) 0px 1px 3px 1px;
   margin-bottom: 4rem;
 }
@@ -1498,7 +1550,8 @@ main .instructors-banner {
 
 @media (min-width: 800px) {
   .active .accordion-content ol {
-    columns: 3;
+    -moz-columns: 3;
+         columns: 3;
     margin: 0 auto;
     text-align: left;
     padding-left: 14rem;
@@ -1533,6 +1586,7 @@ main .instructors-banner {
 
 .filter-input .wp-block-search__input {
   border-radius: 20px;
+  padding-left: 1rem;
 }
 
 .filter-small-flex button {
@@ -1547,6 +1601,28 @@ main .instructors-banner {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.vkfs__label-name {
+  font-family: "Inter";
+}
+
+.vkfs select {
+  font-family: "Inter";
+}
+
+.vkfs .btn[type=submit] {
+  font-family: "Inter";
+  border-radius: 6px;
+  background: #74865E;
+  color: white;
+  font-size: 1.5rem;
+  border: 2px solid #74865E;
+}
+
+.vkfs .btn[type=submit]:hover {
+  background-color: white;
+  color: #74865E;
 }
 
 main {
@@ -1707,7 +1783,8 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
   }
   main .blog-post-content img {
     height: 443px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1100px) {
@@ -1722,7 +1799,7 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
 .form-details {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2.5rem;
   max-width: 1280px;
   margin: 2rem auto;
 }
@@ -1757,9 +1834,7 @@ div.wpforms-container-full .wpforms-form .wpforms-checkbox-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-multiplechoice-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-list-3-columns ul {
   display: -ms-flex;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -1885,6 +1960,11 @@ button#wpforms-submit-343:hover {
 .single-blog-post-container article .individual-blog-flex-container p {
   margin-bottom: 36px;
 }
+@media (min-width: 800px) {
+  .single-blog-post-container .single-blog-post-container article .individual-blog-heading h2 {
+    white-space: nowrap;
+  }
+}
 .single-blog-post-container .page-change {
   max-width: 980px;
   display: flex;
@@ -1892,7 +1972,8 @@ button#wpforms-submit-343:hover {
   padding: 10px;
   margin: auto;
 }
-.single-blog-post-container .page-change .next-page, .single-blog-post-container .page-change .previous-page {
+.single-blog-post-container .page-change .next-page,
+.single-blog-post-container .page-change .previous-page {
   display: flex;
   align-items: center;
 }
@@ -2046,7 +2127,8 @@ main .photo-gallery-banner {
 }
 
 .image-gallery li img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 358px;
   height: 358px;
   vertical-align: middle;
@@ -2194,6 +2276,7 @@ main .photo-gallery-banner {
 
 .main-navigation a {
   display: block;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -2210,6 +2293,7 @@ main .photo-gallery-banner {
   .main-navigation ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2.5rem;
   }
 }
@@ -2396,7 +2480,8 @@ main .photo-gallery-banner {
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -2411,7 +2496,8 @@ main .photo-gallery-banner {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  clip-path: none;
+  -webkit-clip-path: none;
+          clip-path: none;
   color: #21759b;
   display: block;
   font-size: 0.875rem;
@@ -2424,6 +2510,4 @@ main .photo-gallery-banner {
   top: 5px;
   width: auto;
   z-index: 100000;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
