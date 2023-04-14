@@ -31,25 +31,25 @@
     <section>
         <div class="gallery-container">
             <?php
-                while ( have_posts() ) :
-                    the_post();
+            // Get the post or page ID where the gallery is located
+            $post_id = get_the_ID();
 
-                    // Retrieve the gallery data
-                    $gallery = get_post_gallery(get_the_ID(), false);
-                    $ids = explode(',', $gallery['ids']);
-                ?>
+            // Retrieve the gallery shortcode content from the post or page
+            $gallery = get_post_gallery($post_id, false);
+
+            // Extract the image IDs from the gallery shortcode content
+            $ids = explode(',', $gallery['ids']);
+            
+            // Loop through the array of image IDs and display the images
+            ?>
             <ul class="image-gallery">
                 <?php
                 foreach ($ids as $id) {
-                    $image = wp_get_attachment_image_src( $id, 'large' ); 
-                    echo '<li><a href="' . $image[0] . '"><img src="' . $image[0] . '" /></a></li>';
+                    $image = wp_get_attachment_image_src($id, 'large');
+                    echo '<li><a href="' . $image[0] . '" class="lightbox"><img src="' . $image[0] . '" /></a></li>';
                 }
                 ?>
             </ul>
-            <?php
-            endwhile;
-            ?>
-
         </div>
     </section>
 

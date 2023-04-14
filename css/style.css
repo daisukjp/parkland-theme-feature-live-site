@@ -1998,7 +1998,7 @@ main .photo-gallery-banner {
 }
 .photo-gallery-section h2 img {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: -1rem;
   z-index: -1;
   width: 100%;
