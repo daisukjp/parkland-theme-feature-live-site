@@ -12,10 +12,10 @@ get_header();
 <div class="single-blog-post-container">
 <div class="single-blog-post-banner">
     <div class="single-blog-post-wrap">
-        <h2>
+        <h1>
             SINGLE BLOG
             <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke">
-        </h2>
+        </h1>
         
     </div>
 </div>
@@ -25,9 +25,9 @@ get_header();
 
         <div class="individual-blog-heading" >
             <div class="single-blog-post-top-box-item">
-                <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
-                <div class="vector-1">
-                    </div>
+                <?php the_title('<h2 class="entry-title">',
+                    '<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke">',
+                    '</h2>'); ?>
             </div>
         </div>
 

@@ -1798,8 +1798,7 @@ button#wpforms-submit-343:hover {
   justify-content: center;
   align-items: center;
 }
-.single-blog-post-container .single-blog-post-banner h2 {
-  font-size: 28.13px;
+.single-blog-post-container .single-blog-post-banner h1 {
   text-align: center;
   color: #FCFCFC;
   text-transform: uppercase;
@@ -1828,32 +1827,42 @@ button#wpforms-submit-343:hover {
   position: relative;
 }
 .single-blog-post-container article .individual-blog-heading .entry-title {
-  font-size: 28.13px;
   color: #74865E;
   text-transform: uppercase;
   margin-bottom: 72px;
   font-weight: 600;
+  position: relative;
 }
-.single-blog-post-container article .individual-blog-heading .vector-1 {
-  background: url("../images/brush-vector-1.svg") no-repeat;
-  background-size: 100% 37px;
-  height: 50px;
-  width: 100%;
+.single-blog-post-container article .individual-blog-heading .entry-title img {
   position: absolute;
-  top: 8px;
+  top: 1.4rem;
   z-index: -1;
-  max-width: 380px;
+  width: 100%;
+  max-width: 365px;
 }
-@media (min-width: 800px) {
-  .single-blog-post-container article .individual-blog-heading .vector-1 {
-    top: 45px;
-    background-size: 100% 40px;
-    max-width: 100%;
+@media (min-width: 789px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    max-width: 400px;
   }
 }
-@media (min-width: 845px) {
-  .single-blog-post-container article .individual-blog-heading .vector-1 {
-    max-width: 834.48px;
+@media (min-width: 880px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 920px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    max-width: 550px;
+  }
+}
+@media (min-width: 950px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    top: 2.5rem;
+  }
+}
+@media (min-width: 1020px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    top: 3rem;
   }
 }
 .single-blog-post-container article .individual-blog-heading .single-blog-post-top-box-item {
@@ -1863,7 +1872,7 @@ button#wpforms-submit-343:hover {
 @media (min-width: 845px) {
   .single-blog-post-container article .individual-blog-heading .single-blog-post-top-box-item {
     margin: auto;
-    max-width: 840px;
+    max-width: 470px;
   }
 }
 .single-blog-post-container article .individual-blog-flex-container p {
@@ -1917,9 +1926,6 @@ button#wpforms-submit-343:hover {
   }
   .single-blog-post-container .single-blog-post-banner h2 {
     font-size: 43.95px;
-  }
-  .single-blog-post-container article .individual-blog-heading .entry-title {
-    font-size: 64px;
   }
 }
 @media (min-width: 1100px) {

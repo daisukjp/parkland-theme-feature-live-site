@@ -1258,6 +1258,7 @@ main {
                 line-height: 1;
                 margin-bottom: 18px;
                 position: relative;
+
                 img {
                     position: absolute;
                     top: 1.4rem;
@@ -1267,9 +1268,6 @@ main {
                     @media (min-width:789px) {
                         max-width: 400px;
                     }
-                    // @media (min-width:840px) {
-                    //     max-width: 450px;
-                    // }
                     @media (min-width:880px) {
                         max-width: 500px;
                     }
@@ -1492,8 +1490,7 @@ button#wpforms-submit-343{
     justify-content: center;
     align-items: center;
 
-        h2 {
-            font-size: 28.13px;
+        h1 {
             text-align: center;
             color: $gray-99;
             text-transform: uppercase;
@@ -1521,30 +1518,33 @@ button#wpforms-submit-343{
         .individual-blog-heading {
             position: relative;
             .entry-title {
-                font-size: 28.13px;
                 color: $matcha-green;
                 text-transform: uppercase;
                 margin-bottom: 72px;
                 font-weight: 600;
-            }
-            .vector-1 {
-                background: url("../images/brush-vector-1.svg") no-repeat;
-                background-size: 100% 37px;
-                height: 50px;
-                width: 100%;
-                position: absolute;
-                top: 8px;
-                z-index: -1;
-                max-width: 380px;
-        
-                @include mixins.break(med) { 
-                    top: 45px;      
-                    background-size: 100% 40px;
-                    max-width: 100%;
-                }
-        
-                @media (min-width: 845px) {
-                    max-width: 834.48px;
+                position: relative;
+
+                img{
+                    position: absolute;
+                    top: 1.4rem;
+                    z-index: -1;
+                    width: 100%;
+                    max-width: 365px;
+                    @media (min-width:789px) {
+                        max-width: 400px;
+                    }
+                    @media (min-width:880px) {
+                        max-width: 500px;
+                    }
+                    @media (min-width:920px) {
+                        max-width: 550px;
+                    }
+                    @media (min-width:950px) {
+                        top:2.5rem;
+                    }
+                    @media (min-width:1020px) {
+                        top:3rem;
+                    }
                 }
             }
 
@@ -1554,7 +1554,7 @@ button#wpforms-submit-343{
 
                 @media (min-width: 845px) {
                     margin: auto;
-                    max-width: 840px;
+                    max-width: 470px;
                 }
             }
         }
@@ -1625,14 +1625,6 @@ button#wpforms-submit-343{
 
             h2 {
                 font-size: 43.95px;
-            }
-        }
-
-        article {
-            .individual-blog-heading {
-                .entry-title {
-                    font-size: 64px;
-                }
             }
         }
     }
