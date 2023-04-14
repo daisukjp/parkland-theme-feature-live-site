@@ -13,7 +13,7 @@ get_header();
 <div class="hero-banner">
     <div div class="wrap-home-page-container">
     <div class="overlay-box">
-        <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
+        <h1>Welcome to Parkland Tai Chi, where Health is for Life.</h1>
         <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
         <div class="banner-btn-flex">
             <a href="https://www.parklandtaichi.com/classes/" target="_blank" class="btn-book-class banner-btn">Book A Class</a>
@@ -27,8 +27,10 @@ get_header();
     <div class="wrap-mission-statement">
     <div class="mission-statement">
         <div class="mission-statement-title">
-            <h1>Health & Longevity</h1>
-            <div class="vector-1">
+            <h2>
+                Health & Longevity
+                <img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke">
+            </h2>
             </div>
         </div>
         <p>

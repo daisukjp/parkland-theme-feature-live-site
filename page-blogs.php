@@ -16,10 +16,10 @@
 <main>
     <div class="blog-post-banner">
         <div class="blog-post-wrap">
-        <h2 class="blog-list-header-title">
+        <h1 class="blog-list-header-title">
             Blog
             <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke">
-        </h2>
+        </h1>
             
         </div>
     </div>
@@ -32,9 +32,9 @@
             
             <div class="blog-post-top-box">
                 <div class="blog-post-top-box-item">
-                    <h2><?php the_field('blog_page_heading');?></h2>
-                    <div class="vector-1">
-                    </div>
+                    <h2><?php the_field('blog_page_heading');?>
+                        <img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke">
+                    </h2>
                 </div>
             </div>
             

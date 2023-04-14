@@ -98,21 +98,21 @@ html {
   font-size: 62.5%;
 }
 
-h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  font-size: clamp(2.8rem, 4vw, 4.4rem);
-  text-align: center;
-}
-
-h2, h3, h4 {
+h1, h3, h4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   text-align: center;
 }
 
-h2 {
+h1 {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
+  text-align: center;
 }
 
 h3 {
@@ -137,7 +137,7 @@ a {
   color: black;
 }
 
-.about-us-section h1 {
+.about-us-section h2 {
   color: #74865E;
   text-transform: uppercase;
   line-height: 1;
@@ -216,7 +216,7 @@ header svg {
     border-bottom: 1px solid black;
     padding-bottom: 8rem;
   }
-  .search {
+  .search-input-form {
     display: none;
   }
   .weather-and-button-flex {
@@ -587,8 +587,7 @@ table {
   top: 3rem;
   /* brush for heading 1*/
 }
-.hero-banner .wrap-home-page-container .overlay-box h2 {
-  font-size: 28.1px;
+.hero-banner .wrap-home-page-container .overlay-box h1 {
   font-weight: 600;
   margin: 18px 0;
   position: relative;
@@ -671,42 +670,47 @@ table {
 .mission-statement-section .wrap-mission-statement {
   margin: 72px 2rem;
 }
-.mission-statement-section h1 {
-  font-size: 35.16px;
+.mission-statement-section h2 {
   color: #74865E;
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 18px;
   position: relative;
 }
+@media (min-width: 400px) {
+  .mission-statement-section h2 {
+    text-align: left;
+  }
+}
+.mission-statement-section h2 img {
+  position: absolute;
+  top: 1.4rem;
+  z-index: -1;
+  width: 100%;
+  max-width: 365px;
+}
+@media (min-width: 789px) {
+  .mission-statement-section h2 img {
+    max-width: 400px;
+  }
+}
+@media (min-width: 840px) {
+  .mission-statement-section h2 img {
+    max-width: 450px;
+  }
+}
+@media (min-width: 880px) {
+  .mission-statement-section h2 img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 920px) {
+  .mission-statement-section h2 img {
+    max-width: 550px;
+  }
+}
 .mission-statement-section .mission-statement-title {
   position: relative;
-}
-.mission-statement-section .mission-statement .vector-1 {
-  background: url("../images/brush-vector-1.svg") no-repeat;
-  background-size: 100% 37px;
-  height: 50px;
-  width: 100%;
-  position: absolute;
-  top: 43px;
-  z-index: -1;
-}
-@media (min-width: 450px) {
-  .mission-statement-section .mission-statement .vector-1 {
-    top: 9px;
-  }
-}
-@media (min-width: 600px) {
-  .mission-statement-section .mission-statement .vector-1 {
-    top: 95px;
-    background-size: 100% 40px;
-  }
-}
-@media (min-width: 845px) {
-  .mission-statement-section .mission-statement .vector-1 {
-    top: 27px;
-    max-width: 834.48px;
-  }
 }
 .mission-statement-section .mission-statement p {
   font-family: "Josefin Sans", sans-serif;
@@ -755,8 +759,6 @@ table {
   padding: 72px 20px 0 20px;
 }
 .more-about-us h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 22.5px;
   font-weight: 600;
   color: #74865E;
   text-transform: uppercase;
@@ -989,7 +991,7 @@ table {
     height: 60rem;
   }
 }
-.about-us-banner-image h2 {
+.about-us-banner-image h1 {
   color: white;
   font-weight: 700;
   position: relative;
@@ -1000,11 +1002,6 @@ table {
   top: 1.5rem;
   width: 100%;
   z-index: -1;
-}
-
-.about-us-container h2 {
-  text-align: left;
-  line-height: 1;
 }
 
 .about-us-container,
@@ -1038,15 +1035,15 @@ table {
   max-width: 56ch;
 }
 
-.about-us-section h1 {
+.about-us-section h2 {
   position: relative;
 }
 @media (max-width: 800px) {
-  .about-us-section h1 {
+  .about-us-section h2 {
     text-align: center;
   }
 }
-.about-us-section h1 img {
+.about-us-section h2 img {
   position: absolute;
   height: 4rem;
   top: 1rem;
@@ -1055,7 +1052,7 @@ table {
   width: 100%;
 }
 @media (max-width: 800px) {
-  .about-us-section h1 img {
+  .about-us-section h2 img {
     top: 0.5rem;
   }
 }
@@ -1108,7 +1105,7 @@ table {
   text-align: left;
 }
 
-.faq-container h1 {
+.faq-container h2 {
   margin-top: 2rem;
   color: #74865E;
 }
@@ -1207,7 +1204,7 @@ main .instructors-banner {
   }
 }
 
-.instructors-banner h2 {
+.instructors-banner h1 {
   position: relative;
   margin: auto;
   color: #FCFCFC;
@@ -1219,10 +1216,15 @@ main .instructors-banner {
 
 .instructors-banner img {
   position: absolute;
-  top: 1.5rem;
+  top: 0.8rem;
   width: 100%;
   max-height: 20px;
   z-index: -1;
+}
+@media (min-width: 800px) {
+  .instructors-banner img {
+    top: 1.2rem;
+  }
 }
 
 .instructor-container-1,
@@ -1250,14 +1252,14 @@ main .instructors-banner {
 }
 .instructors-section h2 img {
   position: absolute;
-  top: 1.5rem;
+  top: 6rem;
   left: -1rem;
   z-index: -1;
   width: 100%;
 }
-@media (max-width: 800px) {
+@media (min-width: 404px) {
   .instructors-section h2 img {
-    top: 0.5rem;
+    top: 1.9rem;
   }
 }
 
@@ -1555,8 +1557,7 @@ main .blog-post-banner {
   justify-content: center;
   align-items: center;
 }
-main .blog-post-banner h2 {
-  font-size: 28.13px;
+main .blog-post-banner h1 {
   text-align: center;
   color: #FCFCFC;
   text-transform: uppercase;
@@ -1576,34 +1577,39 @@ main .blog-post-banner .blog-list-header-title img {
 main section {
   padding: 72px 20px 0 20px;
 }
-main section h2 {
-  font-size: 28.13px;
-  color: #74865E;
-  text-transform: uppercase;
-  margin-bottom: 72px;
-}
 main section .blog-post-top-box {
   position: relative;
 }
-main section .blog-post-top-box .vector-1 {
-  background: url("../images/brush-vector-1.svg") no-repeat;
-  background-size: 100% 37px;
-  height: 50px;
-  width: 100%;
-  position: absolute;
-  top: 10px;
-  z-index: -1;
-  max-width: 380px;
+main section .blog-post-top-box h2 {
+  color: #74865E;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+  color: #74865E;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 18px;
+  position: relative;
 }
-@media (min-width: 800px) {
-  main section .blog-post-top-box .vector-1 {
-    top: 45px;
-    background-size: 100% 40px;
+main section .blog-post-top-box h2 img {
+  position: absolute;
+  top: 1.4rem;
+  z-index: -1;
+  width: 100%;
+  max-width: 365px;
+}
+@media (min-width: 789px) {
+  main section .blog-post-top-box h2 img {
+    max-width: 400px;
   }
 }
-@media (min-width: 845px) {
-  main section .blog-post-top-box .vector-1 {
-    max-width: 834.48px;
+@media (min-width: 880px) {
+  main section .blog-post-top-box h2 img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 920px) {
+  main section .blog-post-top-box h2 img {
+    max-width: 550px;
   }
 }
 main section .blog-post-top-box .blog-post-top-box-item {
@@ -1613,7 +1619,7 @@ main section .blog-post-top-box .blog-post-top-box-item {
 @media (min-width: 845px) {
   main section .blog-post-top-box .blog-post-top-box-item {
     margin: auto;
-    max-width: 840px;
+    max-width: 470px;
   }
 }
 main .blog-flex-item {
@@ -1678,10 +1684,6 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
 @media (min-width: 800px) {
   main section {
     padding: 72px 50px;
-  }
-  main section h2 {
-    font-size: 64px;
-    font-weight: 600;
   }
   main .blog-flex-item {
     grid-gap: 72px;
@@ -1796,8 +1798,7 @@ button#wpforms-submit-343:hover {
   justify-content: center;
   align-items: center;
 }
-.single-blog-post-container .single-blog-post-banner h2 {
-  font-size: 28.13px;
+.single-blog-post-container .single-blog-post-banner h1 {
   text-align: center;
   color: #FCFCFC;
   text-transform: uppercase;
@@ -1826,32 +1827,42 @@ button#wpforms-submit-343:hover {
   position: relative;
 }
 .single-blog-post-container article .individual-blog-heading .entry-title {
-  font-size: 28.13px;
   color: #74865E;
   text-transform: uppercase;
   margin-bottom: 72px;
   font-weight: 600;
+  position: relative;
 }
-.single-blog-post-container article .individual-blog-heading .vector-1 {
-  background: url("../images/brush-vector-1.svg") no-repeat;
-  background-size: 100% 37px;
-  height: 50px;
-  width: 100%;
+.single-blog-post-container article .individual-blog-heading .entry-title img {
   position: absolute;
-  top: 8px;
+  top: 1.4rem;
   z-index: -1;
-  max-width: 380px;
+  width: 100%;
+  max-width: 365px;
 }
-@media (min-width: 800px) {
-  .single-blog-post-container article .individual-blog-heading .vector-1 {
-    top: 45px;
-    background-size: 100% 40px;
-    max-width: 100%;
+@media (min-width: 789px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    max-width: 400px;
   }
 }
-@media (min-width: 845px) {
-  .single-blog-post-container article .individual-blog-heading .vector-1 {
-    max-width: 834.48px;
+@media (min-width: 880px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 920px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    max-width: 550px;
+  }
+}
+@media (min-width: 950px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    top: 2.5rem;
+  }
+}
+@media (min-width: 1020px) {
+  .single-blog-post-container article .individual-blog-heading .entry-title img {
+    top: 3rem;
   }
 }
 .single-blog-post-container article .individual-blog-heading .single-blog-post-top-box-item {
@@ -1861,7 +1872,7 @@ button#wpforms-submit-343:hover {
 @media (min-width: 845px) {
   .single-blog-post-container article .individual-blog-heading .single-blog-post-top-box-item {
     margin: auto;
-    max-width: 840px;
+    max-width: 470px;
   }
 }
 .single-blog-post-container article .individual-blog-flex-container p {
@@ -1916,9 +1927,6 @@ button#wpforms-submit-343:hover {
   .single-blog-post-container .single-blog-post-banner h2 {
     font-size: 43.95px;
   }
-  .single-blog-post-container article .individual-blog-heading .entry-title {
-    font-size: 64px;
-  }
 }
 @media (min-width: 1100px) {
   .single-blog-post-container .single-blog-post-banner {
@@ -1959,7 +1967,7 @@ main .photo-gallery-banner {
   }
 }
 
-.photo-gallery-banner h2 {
+.photo-gallery-banner h1 {
   position: relative;
   margin: auto;
   color: #FCFCFC;
@@ -1971,11 +1979,15 @@ main .photo-gallery-banner {
 
 .photo-gallery-banner img {
   position: absolute;
-  top: 1.5rem;
-  margin: auto;
+  top: 0.6rem;
   width: 100%;
   max-height: 20px;
   z-index: -1;
+}
+@media (min-width: 800px) {
+  .photo-gallery-banner img {
+    top: 1.2rem;
+  }
 }
 
 .photo-gallery-section {
@@ -1998,17 +2010,16 @@ main .photo-gallery-banner {
 }
 .photo-gallery-section h2 img {
   position: absolute;
-  top: 1.5rem;
+  top: 6rem;
   left: -1rem;
   z-index: -1;
   width: 100%;
 }
-@media (max-width: 800px) {
+@media (min-width: 376px) {
   .photo-gallery-section h2 img {
-    top: 0.5rem;
+    top: 2rem;
   }
 }
-
 .gallery-container {
   max-width: 128rem;
   height: auto;
@@ -2054,6 +2065,22 @@ main .photo-gallery-banner {
 /*--------------------------------------------------------------
 # Search results page
 --------------------------------------------------------------*/
+.search-page-main {
+  padding: 72px 20px;
+  max-width: 128rem;
+  margin: auto;
+}
+
+.search-page-container,
+.widget-area {
+  max-width: 780px;
+  margin: auto;
+}
+
+.widget-area {
+  padding: 2rem;
+}
+
 /*--------------------------------------------------------------
 # Archive page
 --------------------------------------------------------------*/
