@@ -180,7 +180,7 @@ footer a, footer p {
   background-color: #74865E;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .sub-menu li {
     border-bottom: 1px solid black;
   }
@@ -197,7 +197,7 @@ header svg {
   max-width: 128rem;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 1000px) {
   .main-navigation {
     display: block;
   }
@@ -310,11 +310,16 @@ li#menu-item-23 {
   margin-right: 2rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .fa::before {
     float: left;
     margin-right: 0.5rem;
     color: black;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .menu-toggle {
+    display: none;
   }
 }
 /* Box sizing rules */
@@ -2238,7 +2243,7 @@ main .photo-gallery-banner {
   color: #D9D3DD;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .main-navigation ul ul {
     padding-top: 1rem;
   }
@@ -2283,7 +2288,7 @@ main .photo-gallery-banner {
   display: block;
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 1000px) {
   .menu-toggle {
     display: none;
   }
