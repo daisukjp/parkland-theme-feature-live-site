@@ -197,7 +197,7 @@ header svg {
   max-width: 128rem;
 }
 
-@media (max-width: 55rem) {
+@media (max-width: 50rem) {
   .main-navigation {
     display: block;
   }
@@ -1795,7 +1795,7 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
 .form-details {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
   max-width: 1280px;
   margin: 2rem auto;
 }
