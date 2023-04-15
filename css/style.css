@@ -186,7 +186,7 @@ footer a, footer p {
   }
 }
 header svg {
-  height: 6rem;
+  height: 8rem;
 }
 
 .main-navigation {
@@ -197,7 +197,7 @@ header svg {
   max-width: 128rem;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 55rem) {
   .main-navigation {
     display: block;
   }
