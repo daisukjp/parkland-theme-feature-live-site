@@ -15,14 +15,14 @@
     background-color: $matcha-green;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .sub-menu li {
         border-bottom: 1px solid black;
     }
 }
 
 header svg {
-    height: 6rem;
+    height: 8rem;
 }
 
 .main-navigation {
@@ -33,10 +33,10 @@ header svg {
     max-width: 128rem;
 }
 
-@media (max-width: 50rem) {
+
+@media (max-width: 1000px) {
     .main-navigation {
         display: block;
-
         a {
             border-bottom: 1px solid black;
             padding-left: 1rem;
@@ -45,7 +45,6 @@ header svg {
             background: $matcha-green;
         }
     }
-
          .fa::before {
              margin-right: .5rem;
              color: black;
@@ -82,8 +81,6 @@ header svg {
             padding-bottom: 8rem;
         }
     }
-
-
     .search-input-form {
         display: none;
     }
@@ -98,7 +95,6 @@ header svg {
         background: $matcha-green;
 
     }
-
     .menu-menu-1-container {
         position: absolute;
         background: $matcha-green;
@@ -106,7 +102,7 @@ header svg {
         top: 1rem;
         width: 100vw;
     }
-
+    
     .weather-widget {
         margin: 0 auto;
     }
@@ -174,7 +170,7 @@ li#menu-item-23 {
     margin-right: 2rem;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1000px){
                 .fa::before {
                         float: left;
                         margin-right: .5rem;
@@ -182,3 +178,9 @@ li#menu-item-23 {
                     }
 }
 
+@media screen and (min-width: 1000px) {
+.menu-toggle {
+    display: none;
+}
+
+}

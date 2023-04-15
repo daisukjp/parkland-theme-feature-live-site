@@ -1,10 +1,3 @@
-/**
- * File navigation.js.
- *
- * Handles toggling the navigation menu for small screens and enables TAB key
- * navigation support for dropdown menus.
- */
-
 (function () {
     const siteNavigation = document.getElementById("site-navigation");
 
@@ -93,7 +86,7 @@
             event.preventDefault();
             for (const link of menuItem.parentNode.children) {
                 if (menuItem !== link) {
-                    link.classList.toggle("focus");
+                    link.classList.remove("focus");
                 }
             }
             menuItem.classList.toggle("focus");
