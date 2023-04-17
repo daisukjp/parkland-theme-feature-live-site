@@ -620,12 +620,20 @@ table {
 --------------------------------------------------------------*/
 /* Banner Section (Mobile)*/
 .hero-banner {
-  background: url("../images/ptc-home-page-banner.webp") center no-repeat;
+  background: url("../images/ptc-home-page-banner-mobile.webp") center no-repeat;
   background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.3);
   height: 60rem;
   width: 100%;
   position: relative;
+}
+@media (min-width: 800px) {
+  .hero-banner {
+    background: url("../images/ptc-home-page-banner-tablet-desktop.webp") center no-repeat;
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    position: relative;
+  }
 }
 .hero-banner::before {
   content: "";
