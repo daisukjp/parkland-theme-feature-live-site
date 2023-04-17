@@ -1126,9 +1126,13 @@ table {
   position: absolute;
   height: 4rem;
   top: 1rem;
-  left: -1rem;
   z-index: -1;
   width: 100%;
+}
+@media (min-width: 800px) {
+  .about-us-section h2 img {
+    left: -1rem;
+  }
 }
 @media (max-width: 800px) {
   .about-us-section h2 img {

@@ -701,9 +701,12 @@ table {
         position: absolute;
         height: 4rem;
         top: 1rem;
-        left: -1rem;
         z-index: -1;
         width: 100%;
+
+        @include mixins.break(med) {
+            left: -1rem;
+        }
 
         @media (max-width:800px) {
             top: .5rem;
