@@ -609,14 +609,21 @@ table {
 }
 
 .about-us-banner-image {
-    background: url("../images/parkland-member-image.webp") center no-repeat;
+    background: url("../images/parkland-member-image-mobile.webp") center no-repeat;
     background-size: 100% auto;
-    height: 40vh;
+    height: clamp(40vh, 50vh, 60rem);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+
+    @include mixins.break(med) {
+        background: url("../images/parkland-member-image-tablet-desktop.webp") center no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    }
 
     &::before {
         content: '';
@@ -629,9 +636,8 @@ table {
     }
 
     @media (min-width: 1100px) {
-        background: url("../images/parkland-member-image.webp") top center no-repeat;
+        background: url("../images/parkland-member-image-tablet-desktop.webp") top center no-repeat;
         background-size: 100% auto;
-        height: 60rem;
     }
 
     h1 {
