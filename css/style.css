@@ -618,12 +618,20 @@ table {
 --------------------------------------------------------------*/
 /* Banner Section (Mobile)*/
 .hero-banner {
-  background: url("../images/ptc-home-page-banner.webp") center no-repeat;
+  background: url("../images/ptc-home-page-banner-mobile.webp") center no-repeat;
   background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.3);
   height: 60rem;
   width: 100%;
   position: relative;
+}
+@media (min-width: 800px) {
+  .hero-banner {
+    background: url("../images/ptc-home-page-banner-tablet-desktop.webp") center no-repeat;
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    position: relative;
+  }
 }
 .hero-banner::before {
   content: "";
@@ -1026,14 +1034,28 @@ table {
 }
 
 .about-us-banner-image {
-  background: url("../images/parkland-member-image.webp") center no-repeat;
+  background: url("../images/parkland-member-image-mobile.webp") center no-repeat;
   background-size: 100% auto;
-  height: 40vh;
+  height: clamp(40vh, 50vh, 60rem);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+@media (min-width: 800px) {
+  .about-us-banner-image {
+    background: url("../images/parkland-member-image-tablet-desktop.webp") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (min-width: 800px) and (min-width: 1100px) {
+  .about-us-banner-image {
+    background: url("../images/parkland-member-image-tablet-desktop.webp") top center no-repeat;
+    background-size: 100% auto;
+  }
 }
 .about-us-banner-image::before {
   content: "";
@@ -1043,13 +1065,6 @@ table {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
-}
-@media (min-width: 1100px) {
-  .about-us-banner-image {
-    background: url("../images/parkland-member-image.webp") top center no-repeat;
-    background-size: 100% auto;
-    height: 60rem;
-  }
 }
 .about-us-banner-image h1 {
   color: white;
@@ -1068,6 +1083,7 @@ table {
 .registration-heading {
   max-width: 128rem;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 .registration-heading {
@@ -1108,9 +1124,13 @@ table {
   position: absolute;
   height: 4rem;
   top: 1rem;
-  left: -1rem;
   z-index: -1;
   width: 100%;
+}
+@media (min-width: 800px) {
+  .about-us-section h2 img {
+    left: -1rem;
+  }
 }
 @media (max-width: 800px) {
   .about-us-section h2 img {
@@ -1240,7 +1260,7 @@ main {
   /* Medium Size View */
 }
 main .instructors-banner {
-  background: url("../images/ptc-instructors-page-banner.webp") center no-repeat;
+  background: url("../images/ptc-instructors-page-banner-mobile.webp") center no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   height: 18vh;
@@ -1248,6 +1268,16 @@ main .instructors-banner {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1100px) {
+  main .instructors-banner {
+    background: url("../images/ptc-instructors-page-banner-tablet-desktop.webp") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 600px) {
   main .instructors-banner {
@@ -1632,7 +1662,7 @@ main {
   /* Medium Size View */
 }
 main .blog-post-banner {
-  background: url("../images/test-background-2.jpg") center no-repeat;
+  background: url("../images/blog-bg-mobile.webp") center no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   height: 18vh;
@@ -1640,6 +1670,16 @@ main .blog-post-banner {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1100px) {
+  main .blog-post-banner {
+    background: url("../images/blog-bg-tablet-desktop.webp") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 main .blog-post-banner h1 {
   text-align: center;
@@ -1874,7 +1914,7 @@ button#wpforms-submit-343:hover {
   /* Medium Size View */
 }
 .single-blog-post-container .single-blog-post-banner {
-  background: url("../images/test-background-1.jpg") right no-repeat;
+  background: url("../images/single-blog-bg-mobile.webp") right no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   height: 18vh;
@@ -1882,6 +1922,16 @@ button#wpforms-submit-343:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1100px) {
+  .single-blog-post-container .single-blog-post-banner {
+    background: url("../images/single-blog-bg-mobile.webp") right no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .single-blog-post-container .single-blog-post-banner h1 {
   text-align: center;
@@ -2033,7 +2083,7 @@ main {
   /* Medium Size View */
 }
 main .photo-gallery-banner {
-  background: url("../images/ptc-photo-gallery-banner.webp") center no-repeat;
+  background: url("../images/ptc-photo-gallery-banner-mobile.webp") center no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   height: 18vh;
@@ -2041,6 +2091,16 @@ main .photo-gallery-banner {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1100px) {
+  main .photo-gallery-banner {
+    background: url("../images/ptc-photo-gallery-banner-tablet-desktop.webp") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 600px) {
   main .photo-gallery-banner {

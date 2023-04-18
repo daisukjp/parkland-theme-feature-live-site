@@ -78,20 +78,20 @@ get_header();
     <h2>More About Us</h2>
     <div class="wrap-more-about-us">
     <div class="read-our-blog more-about-images">
-        <img src="/wp-content/themes/parkland-theme/images/more-about-us3.webp" alt="tai chi symbol" style="width:380px">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us-1.webp" alt="tai chi symbol" style="width:380px">
         <p>
             Looking to gain a deeper understanding about Tai Chi?
         <a href="https://www.parklandtaichi.com/blogs/" target="_blank"  >Read Our Blog</a>
     </div>
     <div class="view-our-gallery more-about-images">
-        <img src="/wp-content/themes/parkland-theme/images/more-about-us1.webp" alt="tai chi symbol" style="width:380px">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us-2.webp" alt="tai chi symbol" style="width:380px">
         <p>
             Visit our photo gallery to get a look into what Parkland Tai Chi is all about.
         </p>
         <a href="https://www.parklandtaichi.com/photo-gallery/" target="_blank" >View Our Gallery</a>
     </div>
     <div class="read-our-faq more-about-images">
-        <img src="/wp-content/themes/parkland-theme/images/more-about-us2.webp" alt="tai chi symbol" style="width:380px">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us-3.webp" alt="tai chi symbol" style="width:380px">
         <p>
             Have a question? Be sure to check out our FAQ to learn more.
         </p>
