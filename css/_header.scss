@@ -74,11 +74,22 @@ header svg {
             position: absolute;
             display: block;
             top: 36.2rem;
+            animation: appear 0.5s ease;
+            -webkit-animation: appear 0.5s ease;
+            @keyframes appear {
+                0%{
+                opacity: 0;
+                }
+                100%{
+                opacity: 1;
+                }
+            }  
         }
 
         ul#primary-menu {
             border-bottom: 1px solid black;
             padding-bottom: 8rem;
+            background-color: $matcha-green;
         }
     }
     .search-input-form {
@@ -97,7 +108,6 @@ header svg {
     }
     .menu-menu-1-container {
         position: absolute;
-        background: $matcha-green;
         left: -1rem;
         top: 1rem;
         width: 100vw;

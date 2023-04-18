@@ -230,10 +230,21 @@ header svg {
     position: absolute;
     display: block;
     top: 36.2rem;
+    animation: appear 0.5s ease;
+    -webkit-animation: appear 0.5s ease;
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .main-navigation.toggled ul#primary-menu {
     border-bottom: 1px solid black;
     padding-bottom: 8rem;
+    background-color: #74865E;
   }
   .search-input-form {
     display: none;
@@ -248,7 +259,6 @@ header svg {
   }
   .menu-menu-1-container {
     position: absolute;
-    background: #74865E;
     left: -1rem;
     top: 1rem;
     width: 100vw;
@@ -369,7 +379,8 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -476,7 +487,8 @@ footer {
   display: flex;
   gap: 3rem;
   align-items: center;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .site-navigation {
@@ -1583,7 +1595,8 @@ main .instructors-banner {
 
 @media (min-width: 800px) {
   .active .accordion-content ol {
-    columns: 3;
+    -moz-columns: 3;
+         columns: 3;
     margin: 0 auto;
     text-align: left;
     padding-left: 14rem;
@@ -1825,7 +1838,8 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
   }
   main .blog-post-content img {
     height: 443px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1100px) {
@@ -1875,9 +1889,7 @@ div.wpforms-container-full .wpforms-form .wpforms-checkbox-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-multiplechoice-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-list-3-columns ul {
   display: -ms-flex;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -2190,7 +2202,8 @@ main .photo-gallery-banner {
 }
 
 .image-gallery li img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 358px;
   height: 358px;
   vertical-align: middle;
@@ -2350,6 +2363,15 @@ body .featherlight .featherlight-close-icon {
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
+  animation: appear 0.5s ease;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -2546,7 +2568,8 @@ body .featherlight .featherlight-close-icon {
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -2561,7 +2584,8 @@ body .featherlight .featherlight-close-icon {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  clip-path: none;
+  -webkit-clip-path: none;
+          clip-path: none;
   color: #21759b;
   display: block;
   font-size: 0.875rem;
@@ -2574,6 +2598,4 @@ body .featherlight .featherlight-close-icon {
   top: 5px;
   width: auto;
   z-index: 100000;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
