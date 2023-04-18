@@ -369,8 +369,7 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -477,8 +476,7 @@ footer {
   display: flex;
   gap: 3rem;
   align-items: center;
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 
 .site-navigation {
@@ -1585,8 +1583,7 @@ main .instructors-banner {
 
 @media (min-width: 800px) {
   .active .accordion-content ol {
-    -moz-columns: 3;
-         columns: 3;
+    columns: 3;
     margin: 0 auto;
     text-align: left;
     padding-left: 14rem;
@@ -1828,8 +1825,7 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
   }
   main .blog-post-content img {
     height: 443px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1100px) {
@@ -1879,7 +1875,9 @@ div.wpforms-container-full .wpforms-form .wpforms-checkbox-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-multiplechoice-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-list-3-columns ul {
   display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -2192,8 +2190,7 @@ main .photo-gallery-banner {
 }
 
 .image-gallery li img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-width: 358px;
   height: 358px;
   vertical-align: middle;
@@ -2549,8 +2546,7 @@ body .featherlight .featherlight-close-icon {
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -2565,8 +2561,7 @@ body .featherlight .featherlight-close-icon {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #21759b;
   display: block;
   font-size: 0.875rem;
@@ -2579,4 +2574,6 @@ body .featherlight .featherlight-close-icon {
   top: 5px;
   width: auto;
   z-index: 100000;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
