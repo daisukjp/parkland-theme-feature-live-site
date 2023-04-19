@@ -34,28 +34,15 @@
         </h2>
     </div>
 
+
+    <h1>This is photo page</h1>
+
     <section>
         <div class="gallery-container">
             <?php
-            // Get the post or page ID where the gallery is located
-            $post_id = get_the_ID();
-
-            // Retrieve the gallery shortcode content from the post or page
-            $gallery = get_post_gallery($post_id, false);
-
-            // Extract the image IDs from the gallery shortcode content
-            $ids = explode(',', $gallery['ids']);
-            
-            // Loop through the array of image IDs and display the images
+            $loop = new WP_Query($args);
+                get_template_part('template-parts/content', 'photos');
             ?>
-            <ul class="image-gallery">
-                <?php
-                foreach ($ids as $id) {
-                    $image = wp_get_attachment_image_src($id, 'large');
-                    echo '<li><a href="' . $image[0] . '" class="lightbox"><img src="' . $image[0] . '" /></a></li>';
-                }
-                ?>
-            </ul>
         </div>
     </section>
 
