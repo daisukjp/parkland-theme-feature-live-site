@@ -11,7 +11,7 @@ get_header();
 
 <div class="home-page-container">
 <div class="hero-banner">
-    <div div class="wrap-home-page-container">
+    <div class="wrap-home-page-container">
     <div class="overlay-box">
         <h1>Welcome to Parkland Tai Chi, where Health is for Life.</h1>
         <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
