@@ -46,14 +46,14 @@
       <feGaussianBlur result="blur" stdDeviation="1"/>
       <feFlood flood-color="#000" flood-opacity=".34"/>
       <feComposite in2="blur" operator="in"/>
-      <feComposite in="SourceGraphic"/>
+      <feComposite in="SourceGraphic" in2="blur"/>
     </filter>
     <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
       <feOffset dx="1" dy="1"/>
       <feGaussianBlur result="blur-2" stdDeviation="1"/>
       <feFlood flood-color="#000" flood-opacity=".11"/>
       <feComposite in2="blur-2" operator="in"/>
-      <feComposite in="SourceGraphic"/>
+      <feComposite in="SourceGraphic" in2="blur"/>
     </filter>
   </defs>
   <g style="isolation:isolate;">
