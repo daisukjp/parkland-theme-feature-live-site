@@ -34,9 +34,6 @@
         </h2>
     </div>
 
-
-    <h1>This is photo page</h1>
-
     <section>
         <div class="gallery-container">
             <?php
