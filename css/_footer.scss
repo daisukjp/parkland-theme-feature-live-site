@@ -113,15 +113,6 @@ footer{
     flex-basis: 100%;
 }
 
-@media (min-width:75rem) {
-    .site-navigation{
-        align-items: end;
-    }
-    .sitemap{
-        align-items: flex-start;
-    }
-}
-
 .developed-by{
     margin-top: 2rem;
     a{
