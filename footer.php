@@ -37,7 +37,7 @@
 
             <div class="contact-info">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 388.77 261.94">
-                  <a xmlns="http://www.w3.org/2000/svg" id="anchor-footer" xlink:href="https://www.parklandtaichi.com/" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top"></a>
+                  <a xmlns="http://www.w3.org/2000/svg" id="anchor-footer" xlink:href="https://www.parklandtaichi.com/" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top">
                 <defs>
                   <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
                     <feOffset dx="1" dy="1"/>
