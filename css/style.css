@@ -657,7 +657,7 @@ table {
 }
 .hero-banner .wrap-home-page-container .overlay-box p {
   text-align: center;
-  font-size: 18px;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
 }
 .hero-banner .wrap-home-page-container .overlay-box .vector-2 {
   background: url("../images/brush-vector-3.svg") no-repeat;
@@ -774,7 +774,7 @@ table {
 .mission-statement-section .mission-statement-title {
   position: relative;
 }
-.mission-statement-section .mission-statement p {
+.mission-statement-section .wrap-mission-statement p {
   font-family: "Josefin Sans", sans-serif;
   font-size: 28.13px;
   font-weight: 100;
