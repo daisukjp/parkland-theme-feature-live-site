@@ -113,7 +113,7 @@ table {
     height: 60rem;
     width: 100%;
     position: relative;
-    z-index: -99999;
+    // z-index: -1;
 
     @include mixins.break(med) {
         background: url("../images/ptc-home-page-banner-tablet-desktop.webp") center no-repeat;
@@ -2010,7 +2010,7 @@ body .featherlight .featherlight-close-icon {
     flex-direction: column;
     top: 100%;
     left: -999em;
-    z-index: 99999;
+    // z-index: 99999;
 
     :hover {
         color: $pantone;
@@ -2051,6 +2051,7 @@ body .featherlight .featherlight-close-icon {
 .main-navigation ul li:hover>ul,
 .main-navigation ul li.focus>ul {
     left: auto;
+    z-index: 10;
 }
 
 .main-navigation li {

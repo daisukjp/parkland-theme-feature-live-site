@@ -2296,7 +2296,6 @@ body .featherlight .featherlight-close-icon {
   flex-direction: column;
   top: 100%;
   left: -999em;
-  z-index: 99999;
 }
 .main-navigation ul ul :hover {
   color: #D9D3DD;
@@ -2329,6 +2328,7 @@ body .featherlight .featherlight-close-icon {
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
+  z-index: 10;
 }
 
 .main-navigation li {
