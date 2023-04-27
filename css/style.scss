@@ -113,6 +113,7 @@ table {
     height: 60rem;
     width: 100%;
     position: relative;
+    z-index: -99999;
 
     @include mixins.break(med) {
         background: url("../images/ptc-home-page-banner-tablet-desktop.webp") center no-repeat;
