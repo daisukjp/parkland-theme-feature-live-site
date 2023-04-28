@@ -113,7 +113,6 @@ table {
     height: 60rem;
     width: 100%;
     position: relative;
-    // z-index: -1;
 
     @include mixins.break(med) {
         background: url("../images/ptc-home-page-banner-tablet-desktop.webp") center no-repeat;
@@ -154,8 +153,7 @@ table {
 
             p {
                 text-align: center;
-                font-size: clamp(1.8rem, 4vw, 2.2rem)
-
+                font-size: 18px
             }
 
             /* brush for heading 1*/
@@ -286,7 +284,7 @@ table {
     }
 
 
-    .wrap-mission-statement p {
+    .mission-statement p {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 28.13px;
         font-weight: 100;
@@ -2010,7 +2008,7 @@ body .featherlight .featherlight-close-icon {
     flex-direction: column;
     top: 100%;
     left: -999em;
-    // z-index: 99999;
+    z-index: 99999;
 
     :hover {
         color: $pantone;
@@ -2045,18 +2043,17 @@ body .featherlight .featherlight-close-icon {
 }
 
 .main-navigation ul ul a {
-    width: 200px;
+    width: 300px;
 }
 
 .main-navigation ul li:hover>ul,
 .main-navigation ul li.focus>ul {
     left: auto;
-    z-index: 10;
 }
 
-// .main-navigation li {
-//     position: relative;
-// }
+.main-navigation li {
+    position: relative;
+}
 
 .main-navigation a {
     display: block;
